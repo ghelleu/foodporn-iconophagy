@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Foodporn to Iconophagy — Guillaume Helleu</title>
+    <style>
+        /* ═══════════════════════════════════════════════════════════
+           MODEM WORKS STYLE — REAL layout (2-column, serif, editorial)
+           ═══════════════════════════════════════════════════════════ */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #ffffff;
+            color: #1a1a1a;
+            font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+            line-height: 1.6;
+            font-size: 17px;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+        }
+        
+        /* CONTAINER — Full width, sidebar navigation */
+        .page-wrapper {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 60px 80px;
+        }
+        
+        /* HEADER — Simple, minimal */
+        header {
+            margin-bottom: 80px;
+        }
+        
+        h1 {
+            font-size: 64px;
+            font-weight: 400;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            letter-spacing: -0.02em;
+            color: #000;
+        }
+        
+        .subtitle {
+            font-size: 22px;
+            line-height: 1.4;
+            color: #555;
+            font-weight: 400;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        
+        .meta {
+            font-size: 15px;
+            color: #666;
+            line-height: 1.8;
+        }
+        
+        /* TWO-COLUMN LAYOUT — The KEY difference */
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin: 50px 0;
+        }
+        
+        .two-column p {
+            margin: 0 0 20px 0;
+        }
+        
+        /* SINGLE COLUMN for intro/conclusion */
+        .single-column {
+            max-width: 900px;
+            margin: 50px 0;
+        }
+        
+        .single-column p {
+            margin: 0 0 20px 0;
+        }
+        
+        /* TYPOGRAPHY — Serif, editorial */
+        h2 {
+            font-size: 36px;
+            font-weight: 400;
+            margin: 60px 0 30px;
+            letter-spacing: -0.01em;
+            line-height: 1.2;
+        }
+        
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 30px 0 15px;
+            color: #1a1a1a;
+        }
+        
+        p {
+            color: #2a2a2a;
+        }
+        
+        strong {
+            font-weight: 600;
+            color: #000;
+        }
+        
+        em {
+            font-style: italic;
+        }
+        
+        /* IMAGES — Inline, not full-bleed */
+        .image-block {
+            margin: 40px 0;
+        }
+        
+        .image-block img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .image-caption {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #666;
+            font-style: italic;
+        }
+        
+        /* IMAGES — Full-width only for hero */
+        .image-hero {
+            width: 100%;
+            margin: 60px 0;
+        }
+        
+        .image-hero img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* BLOCKQUOTES — Minimal, italic */
+        blockquote {
+            margin: 30px 0;
+            padding-left: 20px;
+            border-left: 3px solid #ddd;
+            font-style: italic;
+            color: #4a4a4a;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        
+        blockquote p {
+            margin: 10px 0;
+        }
+        
+        blockquote .attribution {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #666;
+            font-style: normal;
+        }
+        
+        /* LISTS */
+        ul, ol {
+            margin: 20px 0 20px 25px;
+        }
+        
+        li {
+            margin: 10px 0;
+            color: #2a2a2a;
+        }
+        
+        /* SECTION BREAKS */
+        .section-break {
+            height: 1px;
+            background: #ddd;
+            margin: 60px 0;
+            border: none;
+        }
+        
+        /* RESPONSIVE */
+        @media (max-width: 1024px) {
+            .two-column {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .page-wrapper {
+                padding: 40px 40px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .page-wrapper {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 42px;
+            }
+            
+            h2 {
+                font-size: 28px;
+            }
+            
+            .two-column {
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <header>
+            <h1>From Foodporn to Iconophagy</h1>
+            <p class="subtitle">When Memory Becomes Tradable, and Experience Turns Into Asset</p>
+            <div class="meta">
+                Guillaume Helleu<br>
+                Design Researcher, HEAD–Genève<br>
+                June 2026
+            </div>
+        </header>
+
+        <div class="image-hero">
+            <img src="../iconophagy-images/page01_img01.jpeg" alt="Macaron artistique">
+            <div class="image-caption">Artist-decorated macaron — ephemeral artwork designed for consumption</div>
+        </div>
+
+        <div class="single-column">
+            <p>Luxury goods are built to last. A Hermès bag, a Patek Philippe watch, a Basquiat painting — their value lies in permanence, in their ability to survive their owner, to be collected, authenticated, passed down through generations.</p>
+
+            <p>Food disappears the moment you eat it.</p>
+
+            <p>Yet haute cuisine commands luxury prices. A three-Michelin-star tasting menu costs as much as a limited-edition sneaker, but you can't resell it. You can't authenticate it. You can't even prove you ate it — except through an image.</p>
+
+            <p><strong>This tension defines contemporary gastronomy:</strong> how do you preserve, share, and capitalize on an experience designed to vanish?</p>
+        </div>
+
+        <hr class="section-break">
+
+        <h2>The Ephemeral Problem</h2>
+
+        <div class="two-column">
+            <div>
+                <p>Traditional luxury stabilizes value through materiality. Jean Baudrillard argued that luxury objects function as "durable signs of distinction" within social systems (<em>Le Système des objets</em>, 1968). They accumulate worth over time — through rarity, provenance, condition.</p>
+
+                <p>Haute gastronomy inverts this logic. A dish's existence is inseparable from its consumption. Once eaten, it leaves only sensory memory — unstable, private, impossible to verify.</p>
+
+                <p>Marcel Proust captured this intimacy in <em>Du côté de chez Swann</em> (1913). A madeleine dipped in tea triggers involuntary memory, resurfacing buried experiences with vivid intensity. But Proust's model depends on two conditions: embodied sensation (taste, smell) and unpredictability. You can't summon the memory on command. It emerges accidentally, years later, triggered by chance.</p>
+            </div>
+
+            <div>
+                <p>Contemporary culture rejects this uncertainty. We no longer wait for memories to surface — we demand they be captured, stored, and shared immediately.</p>
+
+                <blockquote>
+                    <p>"Luxury fixes value in the object, ensuring its role as a lasting marker of social differentiation."</p>
+                    <div class="attribution">— Jean Baudrillard, <em>Le Système des objets</em></div>
+                </blockquote>
+
+                <div class="image-block">
+                    <img src="../iconophagy-images/page03_img01.jpeg" alt="Timeline">
+                    <div class="image-caption">Temporal shift: Proust's involuntary memory vs. Instagram's instant archive</div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="section-break">
+
+        <h2>The Image Dictatorship</h2>
+
+        <div class="two-column">
+            <div>
+                <p>As digital memory systems prioritized the visible, gastronomic experience shifted its center of gravity. What once mattered as gustatory intensity now yields to visual power. Dishes are designed to be <em>seen</em> before they are <em>tasted</em>.</p>
+
+                <p>Food is no longer just consumed — it's <em>performed</em> for an audience. The plate becomes an image production platform, a visual trigger for projected desire.</p>
+
+                <p><strong>Influencer Marketing Hub (2023 Benchmark Report):</strong></p>
+                <ul>
+                    <li>437,000 creators generated 1.2 million food/beverage posts</li>
+                    <li>75 billion impressions</li>
+                    <li>3 billion engagements</li>
+                </ul>
+
+                <p>This dynamic reshapes product design. Many foods are now engineered not for flavor complexity, but for photographic impact.</p>
+            </div>
+
+            <div>
+                <div class="image-block">
+                    <img src="../iconophagy-images/page04_img01.jpeg" alt="Visual impact">
+                </div>
+
+                <p>Rainbow-colored ice cream, gold-leaf steaks, unicorn frappuccinos — chromatic intensity and ostentation override taste subtlety. Instagram virality becomes the primary design constraint.</p>
+
+                <blockquote>
+                    <p>"Popular Instagram food trends often prioritize aesthetic appeal over taste quality. Visual 'shareability' has become a core product requirement."</p>
+                    <div class="attribution">— Business Insider (2019)</div>
+                </blockquote>
+
+                <div class="image-block">
+                    <img src="../iconophagy-images/page05_img01.jpeg" alt="Foodporn examples">
+                </div>
+            </div>
+        </div>
+
+        <hr class="section-break">
+
+        <h2>Iconophagy — Consuming the Image</h2>
+
+        <div class="two-column">
+            <div>
+                <p>In a darkened room, Francis Dolarhyde stands before a table lit by soft, amber light. On it rests William Blake's watercolor: <em>The Great Red Dragon and the Woman Clothed in Sun</em> (1805). Slowly, almost ceremonially, he removes the fragile paper from its frame, brings it to his lips, and tears off a corner with his teeth. The taste of ink and paper fills his mouth. Bite by bite, the Dragon disappears — not destroyed, but <em>absorbed</em>.</p>
+
+                <p>This scene from <em>Red Dragon</em> (2002) crystallizes <strong>iconophagy</strong>: the act of consuming an image to internalize its power.</p>
+
+                <p>Contemporary foodporn mirrors this logic. We no longer consume only the dish — we consume <em>its image</em>. We absorb it visually, share it, accumulate it as social and emotional trace.</p>
+            </div>
+
+            <div>
+                <div class="image-block">
+                    <img src="../iconophagy-images/page06_img01.jpeg" alt="Iconophagy loop">
+                    <div class="image-caption">The iconophagic loop: photograph → share → consume the image</div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="section-break">
+
+        <h2>From Gastronomy to NFT — Preserving the Ephemeral</h2>
+
+        <div class="two-column">
+            <div>
+                <p>Contemporary luxury gastronomy increasingly integrates ephemeral aesthetics. Artist-decorated macarons, monumental chocolate sculptures, giant food installations — these creations are designed from the start to disappear.</p>
+
+                <p>We developed a speculative prototype to explore how edible artworks might be preserved and valorized after consumption.</p>
+
+                <div class="image-block">
+                    <img src="../iconophagy-images/page07_img01.jpeg" alt="Macaron prototype">
+                </div>
+
+                <p>Each macaron's surface is decorated with an original miniature artwork by a commissioned artist. Beneath the macaron, a printed QR code grants access to a certified digital version of the artwork, registered as an NFT on a public blockchain.</p>
+            </div>
+
+            <div>
+                <div class="image-block">
+                    <img src="../iconophagy-images/page07_img02.jpeg" alt="QR code">
+                    <div class="image-caption">QR code integration — physical to digital translation</div>
+                </div>
+
+                <p>The gesture operates a controlled translation: the edible artwork, destined to vanish, migrates to a persistent digital existence.</p>
+
+                <div class="image-block">
+                    <img src="../iconophagy-images/page08_img01.jpeg" alt="Usage">
+                </div>
+
+                <p>This process opens critical perspectives for food design and haute gastronomy professions. The food photograph becomes not just an emotional archive, but an active relay for aesthetic capitalization.</p>
+            </div>
+        </div>
+
+        <div class="image-hero">
+            <img src="../iconophagy-images/page08_img02.jpeg" alt="NFT interface">
+            <div class="image-caption">Digital persistence: NFT interface mockup</div>
+        </div>
+
+        <div class="two-column">
+            <div>
+                <p>Far from reducing gustatory experience to mere documentation, this device questions the possibility of an <strong>augmented memory of the ephemeral</strong> — a memory that extends, modulates, and redistributes traces in a space where food and image coexist in critical translation.</p>
+            </div>
+
+            <div>
+                <div class="image-block">
+                    <img src="../iconophagy-images/page09_img01.jpeg" alt="Memory flow">
+                </div>
+            </div>
+        </div>
+
+        <hr class="section-break">
+
+        <h2>Reality Check — Limits and Ambiguities</h2>
+
+        <div class="two-column">
+            <div>
+                <p>Before celebrating this solution, we must examine its limitations.</p>
+
+                <p><strong>Speculation vs. Accessibility:</strong> NFTs remain volatile speculative assets. The 2021-2022 crypto boom saw food-related NFTs trade for thousands of dollars. By 2023, most had lost 90%+ of their value.</p>
+
+                <p><strong>Environmental Impact:</strong> Proof-of-Work blockchains consumed as much energy as entire countries. Even Proof-of-Stake systems carry non-negligible carbon footprints.</p>
+
+                <p><strong>Technical Barriers:</strong> Not everyone owns a crypto wallet. Claiming an NFT requires MetaMask, seed phrases, gas fees, and blockchain literacy.</p>
+            </div>
+
+            <div>
+                <p><strong>The Ownership Illusion:</strong> NFTs grant a blockchain record, but the actual image file is usually hosted off-chain. If the hosting service shuts down, your "permanent" NFT points to a dead link.</p>
+
+                <div class="image-block">
+                    <img src="../iconophagy-images/page10_img01.jpeg" alt="Limitations">
+                </div>
+
+                <p>What happens when memory itself becomes encodable, transferable, purchasable? This project sits on a spectrum. Today: we encode the <em>image</em> of an experience. Tomorrow: we might encode the <em>sensation</em> itself.</p>
+            </div>
+        </div>
+
+        <blockquote>
+            <p>The boundary between real and implanted memory collapses. If you can buy a memory of eating a Michelin-starred meal — complete with taste, smell, emotion — did you experience it or not?</p>
+            <div class="attribution">— Philip K. Dick, <em>We Can Remember It for You Wholesale</em> (1966)</div>
+        </blockquote>
+
+        <div class="two-column">
+            <div>
+                <p>This is not science fiction. Neurotechnology advances toward memory modulation. DARPA funds research on memory encoding. Neuralink aims for brain-computer interfaces. The macaron NFT is a first step — a gentle rehearsal for a future where experiences themselves are capitalized, stored, traded, and implanted.</p>
+            </div>
+
+            <div>
+                <div class="image-block">
+                    <img src="../iconophagy-images/page11_img01.jpeg" alt="Memory economy">
+                </div>
+            </div>
+        </div>
+
+        <hr class="section-break">
+
+        <h2>Toward a Memory Economy</h2>
+
+        <div class="two-column">
+            <div>
+                <p>Beyond attention economy lies <strong>memory economy</strong> — a system where memories become tradable goods, subject to market logic.</p>
+
+                <p>The macaron NFT already participates in this shift. By transforming an ephemeral experience into a persistent, authenticated trace, it rehearses a broader transformation.</p>
+
+                <div class="image-block">
+                    <img src="../iconophagy-images/page12_img01.jpeg" alt="Economic transformation">
+                </div>
+            </div>
+
+            <div>
+                <div class="image-block">
+                    <img src="../iconophagy-images/page12_img02.jpeg" alt="Future scenarios">
+                </div>
+            </div>
+        </div>
+
+        <hr class="section-break">
+
+        <h2>The Chrysalis Metaphor</h2>
+
+        <div class="two-column">
+            <div>
+                <p>Throughout this project, a metaphor emerged: <strong>the gastronomic chrysalis</strong>.</p>
+
+                <p>A caterpillar consumes itself to become a butterfly. The macaron is consumed to release its digital twin. The physical artwork dissolves to birth its blockchain-certified persistence.</p>
+
+                <div class="image-block">
+                    <img src="../iconophagy-images/page13_img01.jpeg" alt="Chrysalis">
+                </div>
+            </div>
+
+            <div>
+                <p>This metamorphosis is not neutral. It carries consequences:</p>
+
+                <ul>
+                    <li>The original is destroyed (you cannot keep both)</li>
+                    <li>The digital trace is <em>not</em> identical to the physical experience</li>
+                    <li>The transformation is <strong>irreversible</strong></li>
+                </ul>
+
+                <div class="image-block">
+                    <img src="../iconophagy-images/page13_img02.jpeg" alt="Transformation">
+                </div>
+            </div>
+        </div>
+
+        <hr class="section-break">
+
+        <div class="single-column">
+            <h2>What Remains When Nothing Remains?</h2>
+
+            <p>Faced with the programmed disappearance of gastronomic experience, contemporary culture has elaborated devices of visual capture and prolongation, engaging a progressive shift from lived experience to representation, from taste to image, from the ephemeral to the archive.</p>
+
+            <p>Through the speculative prototype presented here, we explored how a creation destined for consumption might migrate toward certified digital persistence, revealing new strategies for capitalizing on the perishable.</p>
+
+            <p>This dynamic sketches the contours of a broader transformation: the emergence of a <strong>memory economy</strong>, where experience itself becomes a product, susceptible to being captured, exchanged, and simulated.</p>
+
+            <p>Gastronomy — as the art of the ephemeral — reveals itself as a privileged terrain for understanding this mutation. No longer an art of immediate taste, but an art of <strong>programmable memory</strong>.</p>
+
+            <p><strong>What remains of an experience when it is anticipated to be preserved, mediated to be exchanged, encoded to be possessed?</strong></p>
+
+            <p>As our memories become capitalizable, perhaps the very capacity to <em>live the moment</em> dissolves.</p>
+        </div>
+
+        <div class="image-hero">
+            <img src="../iconophagy-images/page14_img01.jpeg" alt="Conclusion">
+        </div>
+
+        <hr class="section-break">
+
+        <div class="two-column">
+            <div>
+                <h3>Technical Appendix</h3>
+
+                <p><strong>Macaron Specifications:</strong></p>
+                <ul>
+                    <li>Diameter: 4.5 cm</li>
+                    <li>Shell: almond flour, egg whites, sugar</li>
+                    <li>Artwork: edible ink, airbrush</li>
+                    <li>Artist commission: 5 specialists</li>
+                </ul>
+
+                <p><strong>QR Code Integration:</strong></p>
+                <ul>
+                    <li>Placement: food-safe parchment</li>
+                    <li>Encoding: URL to NFT claim</li>
+                    <li>Error correction: Level H (30%)</li>
+                    <li>Size: 2×2 cm</li>
+                </ul>
+            </div>
+
+            <div>
+                <div class="image-block">
+                    <img src="../iconophagy-images/page15_img01.jpeg" alt="Specifications">
+                </div>
+
+                <p><strong>NFT Stack (Speculative):</strong></p>
+                <ul>
+                    <li>Blockchain: Ethereum / Polygon</li>
+                    <li>Contract: ERC-721</li>
+                    <li>Storage: IPFS + Arweave</li>
+                </ul>
+
+                <p><strong>Cost Analysis:</strong></p>
+                <ul>
+                    <li>Base: €2.50</li>
+                    <li>Artist: €5.00</li>
+                    <li>QR: €0.30</li>
+                    <li>NFT: €1.20</li>
+                    <li><strong>Retail: €25-35</strong></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="section-break">
+
+        <div class="single-column">
+            <h3>References</h3>
+            <p><strong>Baudrillard, J.</strong> (1968). <em>Le Système des objets</em>. Paris: Gallimard.</p>
+            <p><strong>Business Insider</strong> (2019). "Popular Instagram Food Trends Often Prioritize Aesthetic Appeal Over Taste Quality."</p>
+            <p><strong>Dick, P. K.</strong> (1966). <em>We Can Remember It for You Wholesale</em>. <em>The Magazine of Fantasy & Science Fiction</em>.</p>
+            <p><strong>Influencer Marketing Hub</strong> (2023). <em>Benchmark Report: Food & Beverage Influencer Marketing</em>.</p>
+            <p><strong>Proust, M.</strong> (1913). <em>Du côté de chez Swann</em>. Paris: Grasset.</p>
+            <p><strong>Ratner, B.</strong> (Director). (2002). <em>Red Dragon</em> [Film]. Universal Pictures.</p>
+        </div>
+
+    </div>
+</body>
+</html>
